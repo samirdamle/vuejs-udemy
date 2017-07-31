@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Buttons - Vue.js Tutorial from Udemy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../assets/css/main.css" rel="stylesheet">
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="app">
+            <button type="button" v-on:click="reveal">View the secret number</button>
+            <button type="button" @click="reveal">View the secret number again</button>
+        </div>
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    secretNumber: Math.ceil(Math.random() * 50)
+                },
+                methods: {
+                    reveal() {
+                        alert(`Here's your secret number: ${this.secretNumber}`)
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

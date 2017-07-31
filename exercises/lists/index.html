@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lists - Vue.js Tutorial from Udemy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../assets/css/main.css" rel="stylesheet">
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="app">
+            <ol>
+                <li v-for="color in colors" v-if="color.primary">{{color.name}}</li>
+            </ol>
+            
+        </div>
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    colors: [
+                        { name:'red', primary: true },
+                        { name:'blue', primary: true },
+                        { name:'yellow', primary: true },
+                        { name:'orange', primary: false },
+                        { name:'green', primary: false },
+                        { name:'purple', primary: false }
+                    ]
+                }
+            });
+        </script>
+    </body>
+</html>

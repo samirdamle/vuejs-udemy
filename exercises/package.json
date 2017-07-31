@@ -1,0 +1,8 @@
+{
+    "name": "vue-js-udemy-tutorial-exercises",
+    "version": "1.0.0",
+    "scripts": {
+        "lite": "lite-server",
+        "start": "npm run lite"
+    }
+}
