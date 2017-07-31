@@ -15,6 +15,7 @@
         </div>
         <br><br>
         {{character}}
+        
     </div>
 </template>
 <script>
